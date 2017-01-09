@@ -3,6 +3,27 @@ body {
   padding: 0;
 }
 
+#section1 {
+  padding-top:100px;
+  padding-bottom:50px;
+  color: #fff; 
+  background-color: #2b333e;
+}
+
+#section2 {
+  padding-top:50px;
+  padding-bottom:50px;
+  color: #fff; 
+  background-color: #d4d6d8;
+}
+
+#section3 {
+  padding-top:50px;
+  padding-bottom:50px;
+  color: #fff;
+  background-color: #cc7900;
+}
+
 #smicon {
   margin: auto;
   float: right;
