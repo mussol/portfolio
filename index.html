@@ -8,10 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 </head>
 
+<!-- The scrollable area -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <header>
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -34,23 +37,31 @@
   </header>
 
   <main>
+    <!-- Section 1 -->
     <div id="section1" class="container-fluid">  
-      <div class="row">
-        <div class="col-xs-6">
-          <img class="img-responsive img-circle" src="http://placehold.it/300x300" alt="portrait">
-        </div>
-        <div class="col-xs-6">
-          <h1>Hello !</h1>
-          <h4>My name is Gemma.</h4>
-          <br>
-          <a id="smicon" href="https://www.freecodecamp.com/mussol"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
-          <a id="smicon" href="https://github.com/mussol"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-          <a id="smicon" href="https://twitter.com/mu55ol"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-          <a id="smicon" href="https://ch.linkedin.com/in/gemmavalls"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-        </div>
+      <div class="left">
+        <img class="img-responsive img-circle" src="http://placehold.it/300x300" alt="portrait">
+      </div>
+      <div class="right">
+        <h1>Hello !</h1>
+        <h4>My name is Gemma.</h4>
+        <br>
+        <p>I recently dove into the world of learning front and back-end development and here's where you will find my upcoming projects and sites.
+        <!--<br> Currently expanding my knowledge of Python | Java | HTML/CSS</p> -->
+      </div>
+    </div>
+    
+    <!-- Section 1b -->
+    <div id="section1b" class="container-fluid">
+      <div>
+        <a id="smicon" href="https://www.freecodecamp.com/mussol"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+        <a id="smicon" href="https://github.com/mussol"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+        <a id="smicon" href="https://twitter.com/mu55ol"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+        <a id="smicon" href="https://ch.linkedin.com/in/gemmavalls"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
       </div>
     </div>
 
+    <!-- Section 2 -->
     <div id="section2" class="container-fluid">
       <h2>Portfolio</h2>
       <div class="row center-block">
@@ -72,7 +83,6 @@
             </div>
           </a>
         </div>
-        <div class="w-100"></div>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <a href="#" class="thumbnail">
             <img src="http://placehold.it/300x200" alt="...">
@@ -94,38 +104,35 @@
       </div>
     </div>
 
+    <!-- Section 3 -->
     <div id="section3" class="container-fluid">
-      <h2> Contact </h2>
-      <form class="form-horizontal">
+      <h2> Contact </h2><br>
+      <p>If you have a question, comment, or an interesting project you'd like to discuss, send me a message and I'll respond promptly.</p><br>
+      <form class="col-xs-offset-2 col-xs-8">
         <div class="form-group">
-          <label for="inputName" class="col-sm-6 control-label"> Your name / company </label>
-          <div class="col-sm-5">
-            <input type="text" class="form-control" id="inputName" placeholder="Name">
-          </div>
+          <label for="inputName" class="control-label"> Your name / company </label>
+          <input type="text" class="form-control" id="inputName" placeholder="Name">
         </div>
         <div class="form-group">
-          <label for="inputEmail" class="col-sm-6 control-label"> Email address </label>
-          <div class="col-sm-5">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-          </div>
+          <label for="inputEmail" class="control-label"> Email address </label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
         </div>
         <div class="form-group">
-          <label for="message" class="col-sm-6 control-label"> Your message </label>
-          <div class="col-sm-5">
-            <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea>
-          </div>
+          <label for="message" class="control-label"> Your message </label>
+          <textarea rows="3" class="form-control" id="message" placeholder="Message"></textarea>
         </div>
         <button type="button" class="btn btn-default"> Send </button>
       </form>
     </div>
 
+    <!-- JS scrips -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </main>
 
     <footer>
-      <p>Site created by Mussol</p>
+      <p class="text-center">2017 | Site created by Mussol</p>
     </footer>
     
   </body>
